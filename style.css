@@ -1,0 +1,396 @@
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    
+} 
+
+nav{
+    background-color:#209533 ;
+    color :white;
+    padding: 20px 50px; 
+    text-decoration: none;
+}
+.navtop{
+    display :flex;
+    align-items :center;
+    justify-content: space-between;
+    animation: none;
+}
+
+.navtitle{
+    color: white;
+}
+
+.title{
+    width: 50px;
+    height: 20px;
+}
+.search {
+    position: relative; 
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchbar {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+.searchResults {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 833px;
+    background-color:black;
+    border: 1px solid lightgray;
+    color: white;
+    border-top: none;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+    text-decoration: none;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.searchicon {
+    margin-left: 10px; 
+}
+
+.searchicon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.product {
+    padding: 8px;
+    cursor: pointer;
+    text-decoration: none ;
+}
+
+.product:hover {
+    background-color: #f4f4f4;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.walletbtn{
+    color: wheat;
+    align-items: center;
+}
+
+.wallet{
+    background-image: url(./img/wallet.png);
+    background-size: cover;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: none;
+}
+
+.menuitem{
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    color:black;
+}  
+
+.menuitem:hover{
+    background-color:#209533 ;
+    color: white;
+}
+
+.sliderwrap{
+    background-color: black;
+    display: flex;
+    width: 197vw;
+    height: 75vh;
+    transition: all 1s ease-in-out;
+}
+
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slidertitle{
+    position: absolute;
+    top:10%;
+    right:5%;
+    font-size: 50px;
+    color:white;
+
+}
+
+.sliderprice{
+    position: absolute;
+    top:10%;
+    left:10%;
+    font-size: 50px;
+    color:white;
+}
+
+.buybtn{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    border: 1px solid gray;
+    background-color: #209533;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.buybtn:hover{
+    background-color: gold;
+    color: black;
+}
+
+.star {
+    position: absolute;
+    background:white;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: starAnimation 5s linear infinite;
+}
+
+@keyframes starAnimation {
+    0% {
+        opacity: 0.8;
+        transform: translate(0, 0);
+    }
+    25% {
+        opacity: 0.5;
+        transform: translate(5vw, -5vh);
+    }
+    50% {
+        opacity: 0.3;
+        transform: translate(10vw, -10vh);
+    }
+    75% {
+        opacity: 0.1;
+        transform: translate(15vw, -15vh);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(20vw, -20vh);
+    }
+}
+
+.sliderimage .star{
+    display: none;
+}
+
+.walletcnt{
+    display: none;
+    font-size: 15px;
+    width:300px;
+    height:150px;
+    background-color:black;
+    position:absolute;
+    border: 1px white;
+    border-radius: 10px;
+    right: 4%;
+    top:11%;
+    opacity: 0.6;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cnt{
+    position: absolute;
+    width:250px;
+    height:30px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.closewallet {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.gallery{
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 57vh;
+    color: white;
+    background-color: #209533;
+    border: none;
+}
+
+.photo1{
+    background-color: black;
+    margin: -1px 0px 20px 0px;
+    width: 50vw;
+    height: 55vh;
+    clip-path: polygon(0 0, 98% 0, 100% 100%, 0% 100%);
+}
+
+.photo1 h2{
+   margin: 0;
+}
+
+.photo1 img {
+    width: 360px;
+    height: 340px;
+   margin-left: 58%;
+   margin-bottom: 0;
+}
+
+.photo2{
+    background-color: black;
+    margin: 16px 0px 0px 0px;
+    width: 50vw;
+    height: 55vh;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
+}
+
+.photo2 h2{
+    margin-left: 10%;
+    margin-bottom: 40%;
+}
+
+.photo2 img {
+    width: 440px;
+    height: 360px;
+    margin-top: 8%;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 80px;
+  }
+  
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.featureIcon {
+    width: 50px;
+    height: 50px;
+}
+  
+.featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+  
+.featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    color: grey;
+}
+  
+.footerLeft {
+    color: gray;
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+  
+.fMenuTitle {
+    font-size: 16px;
+}
+  
+.fList {
+    padding: 0;
+    list-style: none;
+}
+  
+.fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+  
+.footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.fInput {
+    padding: 5px;
+}
+  
+.fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+  
+.fIcons{
+    display: flex;
+}
+  
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF8">
+    <link rel = "stylesheet" href ="nvidia.css">
+</head>
+<body>
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/815d7TTP5UL._AC_SX679_.jpg" alt="" class="img">
+        <div class="info">
+        <h1 class="title">ASUS ROG Strix GeForce RTX® 4090 OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)</h1>
+        <h2 class="price">$1699</h2>
+        <ol>
+            <li><b>Brand</b>	ASUS</li>
+            <li><b>Graphics Ram Size</b>	24 GB</li>
+            <li><b>GPU Clock Speed</b>	2.64 GHz</li>
+            <li><b>Video Output Interface</b>	DisplayPort, HDMI, PCI Express</li>
+        </ol>
+        <button class="Buybtn1">
+            BUY
+        </button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71liIYrRmkL._AC_SX679_.jpg" alt="" class="img">
+        <div class="info">
+        <h1 class="title">GIGABYTE GeForce RTX 4070 WINDFORCE OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X, GV-N4070WF3OC-12GD Video Card</h1>
+        <h2 class="price">$549</h2>
+        <ol>
+            <li><b>Coprocessor</b>	NVIDIA GeForce RTX 4070</li>
+            <li><b>Brand</b>	GIGABYTE</li>
+            <li><b>Graphics Ram Size</b>	12 GB</li>
+            <li><b>GPU Clock Speed</b>	2940 MHz</li>
+            <li><b>Video Output Interface</b>	DisplayPort, HDMI</li>
+        </ol>
+        <button class="Buybtn2">
+            BUY
+        </button>
+        </div>
+    </div>
+
+    <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text"  class="payInput">
+        <label>Phone Number</label>
+        <input type="text"  class="payInput">
+        <label>Address</label>
+        <input type="text"  class="payInput">
+        <h1 class="payTitle">Ethereum Wallet Information</h1>
+        
+        <input type="password" class="payInput" placeholder="password">
+        <div class="cardInfo">
+            <input type="text" placeholder="Wallet Address" class="payInput sm">
+        </div>
+        <button class="payButton">BUY</button>
+        <span class="close">X</span>
+    </div>
+
+    <script>
+        const productbutton1 = document.querySelector(".Buybtn1");
+        const productbutton2 = document.querySelector(".Buybtn2");
+        const payment = document.querySelector(".payment");
+        const close = document.querySelector(".close");
+        
+        productbutton1.addEventListener("click", () => {
+        payment.style.display = "flex";
+         });
+
+        productbutton2.addEventListener("click", () => {
+        payment.style.display = "flex";
+         });
+
+        close.addEventListener("click", () => {
+        payment.style.display = "none";
+        });
+    </script>
+</body>
+</html>
