@@ -155,6 +155,10 @@ nav{
     color:white;
 }
 
+.sliderimage{
+    cursor: pointer;
+}
+
 .buybtn{
     position: absolute;
     top: 50%;
