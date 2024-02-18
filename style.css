@@ -123,6 +123,7 @@ nav{
 }
 
 .sliderwrap{
+    overflow-x: hidden;
     background-color: black;
     display: flex;
     width: 197vw;
